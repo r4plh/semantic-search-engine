@@ -24,6 +24,7 @@ def get_embeddings(text_list):
     return model_output.last_hidden_state[:, 0].cpu().detach().numpy()
 
 # Streamlit UI
+# Implementation
 st.title("Semantic Search Engine")
 st.write("Enter your query below:")
 query = st.text_input("Query", "")
